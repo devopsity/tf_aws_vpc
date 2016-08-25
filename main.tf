@@ -4,7 +4,7 @@
 
 # VPC resource
 resource "aws_vpc" "main" {
-    cidr_block = "${var.vpc_default_cidr}"
+    cidr_block = "${var.cidr_block}"
 
     // optional
     enable_dns_support = "${var.enable_dns_support}"

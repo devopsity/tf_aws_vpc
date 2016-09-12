@@ -13,7 +13,6 @@ variable "deploytag" {}
 variable "cidr_block" { type = "list" }
 variable "vpc_id" {}
 variable "region_azs" { 
-	default = ""
 	type = "map"
  }
 

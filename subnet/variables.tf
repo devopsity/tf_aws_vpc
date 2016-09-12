@@ -12,7 +12,11 @@ variable "deploytag" {}
 
 variable "cidr_block" { type = "list" }
 variable "vpc_id" {}
-variable "region_azs" { default = "" }
+variable "region_azs" { 
+	default = ""
+	type = "map"
+ }
+
 
 // optional
 variable map_public_ip_on_launch { default = "false" }

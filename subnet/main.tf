@@ -20,5 +20,6 @@ resource "aws_subnet" "main" {
         environment = "${var.environment}"
         team = "${var.team}"
         deploytag = "${var.deploytag}"
+		nat = "${var.isnat}"
     }
 }

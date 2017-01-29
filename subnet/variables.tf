@@ -9,6 +9,7 @@ variable "env" {}
 variable "environment" {}
 variable "team" {}
 variable "deploytag" {}
+variable "isnat" { default = "false" }
 
 variable "cidr_block" { type = "list" }
 variable "vpc_id" {}

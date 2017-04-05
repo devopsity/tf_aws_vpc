@@ -14,7 +14,7 @@ variable "isnat" { default = "false" }
 variable "cidr_block" { type = "list" }
 variable "vpc_id" {}
 variable "region_azs" { 
-	type = "map"
+	type = "list"
  }
 
 

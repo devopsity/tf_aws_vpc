@@ -11,10 +11,10 @@ variable "team" {}
 variable "deploytag" {}
 variable "isnat" { default = "false" }
 
-variable "cidr_block" { type = "list" }
+variable "cidr_block" { type = list(string) }
 variable "vpc_id" {}
 variable "region_azs" { 
-	type = "list"
+	type = list(string)
  }
 
 

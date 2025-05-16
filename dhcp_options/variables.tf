@@ -14,11 +14,11 @@ variable "deploytag" {}
 variable domain_name {}
 variable domain_name_servers {
 	default = ["127.0.0.1"]
-	type = "list"
+	type = list(string)
 }
 variable ntp_servers { 
 	default = ["127.0.0.1"]
-	type = "list"
+	type = list(string)
 }
 
 // Disabled

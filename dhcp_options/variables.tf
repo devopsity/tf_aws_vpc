@@ -11,7 +11,7 @@ variable "team" {}
 variable "deploytag" {}
 
 // Optional
-variable domain_name {}
+variable "domain_name" {}
 variable "domain_name_servers" {
 	default = ["127.0.0.1"]
 	type = list(string)

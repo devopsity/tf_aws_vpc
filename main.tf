@@ -14,7 +14,7 @@ resource "aws_vpc" "main" {
     //enable_classiclink = "${var.enable_classiclink}"
     //instance_tenancy = "${var.instance_tenancy}"
 
-    tags {
+    tags = {
         Name = "vpc-${var.region_code}-${var.env}"
         region = "${var.region_code}"
         env = "${var.env}"

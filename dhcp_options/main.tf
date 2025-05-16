@@ -7,14 +7,14 @@ resource "aws_vpc_dhcp_options" "main" {
     
     // Optional
     domain_name = "${var.domain_name}"
-    domain_name_servers = ["${var.domain_name_servers}"]
-    ntp_servers = ["${var.ntp_servers}"]
+    domain_name_servers = var.domain_name_servers
+    ntp_servers = var.ntp_servers
 
     // Disabled
     //netbios_name_servers = "${var.netbios_name_servers}"
     //netbios_node_type = "${var.netbios_node_type}"
 
-    tags {
+    tags = {
         Name = "vpc-${var.region_code}-${var.env}"
         region = "${var.region_code}"
         env = "${var.env}"

@@ -12,16 +12,13 @@ variable "deploytag" {}
 
 // Optional
 variable domain_name {}
-variable domain_name_servers 
-{
+variable domain_name_servers {
 	default = ["127.0.0.1"]
 	type = "list"
 }
-variable ntp_servers 
-{ 
+variable ntp_servers { 
 	default = ["127.0.0.1"]
 	type = "list"
-
 }
 
 // Disabled

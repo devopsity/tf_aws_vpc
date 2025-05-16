@@ -14,7 +14,7 @@ resource "aws_vpc_dhcp_options" "main" {
     //netbios_name_servers = "${var.netbios_name_servers}"
     //netbios_node_type = "${var.netbios_node_type}"
 
-    tags {
+    tags = {
         Name = "vpc-${var.region_code}-${var.env}"
         region = "${var.region_code}"
         env = "${var.env}"

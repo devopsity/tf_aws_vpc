@@ -13,7 +13,7 @@ resource "aws_subnet" "main" {
     map_public_ip_on_launch = "${var.map_public_ip_on_launch}"
     availability_zone = "${element(var.region_azs, count.index)}"
 
-    tags {
+    tags = {
         Name = "vpc-${var.region_code}-${var.env}"
         region = "${var.region_code}"
         env = "${var.env}"

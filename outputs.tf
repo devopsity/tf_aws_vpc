@@ -28,9 +28,9 @@ output "enable_dns_hostnames" {
 }
 
 // Whether or not the VPC has Classiclink enabled
-output "enable_classiclink" {
-    value = "${aws_vpc.main.enable_classiclink}"
-}
+//output "enable_classiclink" {
+//    value = "${aws_vpc.main.enable_classiclink}"
+//}
 
 
 // The ID of the main route table associated with this VPC. Note that you can change a VPC's main 

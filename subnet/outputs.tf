@@ -4,7 +4,7 @@
 
 // The ID of the Subnet
 output "id" {
-    value = aws_subnet.main[*]id
+    value = aws_subnet.main[*].id
 }
 
 // Subnets availability_zones 

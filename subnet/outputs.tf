@@ -14,7 +14,7 @@ output "availability_zone" {
 
 // Subnets cidr_block 
 output "cidr_block" {
-    value = [ "${aws_subnet.main.*.cidr_block}" ]
+    value = aws_subnet.main[*].cidr_block
 }
 
 // Subnets vpc_id 
